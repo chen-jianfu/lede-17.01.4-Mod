@@ -1201,7 +1201,7 @@ CONFIG_BUSYBOX_DEFAULT_HWCLOCK=y
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_LAST_FANCY is not set
 # CONFIG_BUSYBOX_DEFAULT_LOSETUP is not set
 # CONFIG_BUSYBOX_DEFAULT_LSPCI is not set
-# CONFIG_BUSYBOX_DEFAULT_LSUSB is not set
+CONFIG_BUSYBOX_DEFAULT_LSUSB=y
 # CONFIG_BUSYBOX_DEFAULT_MDEV is not set
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_MDEV_CONF is not set
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_MDEV_RENAME is not set
@@ -5362,7 +5362,7 @@ CONFIG_PACKAGE_hostapd-common=y
 # CONFIG_PACKAGE_iotivity-resource-container-sample is not set
 # CONFIG_PACKAGE_iotivity-resource-directory-lib is not set
 # CONFIG_PACKAGE_iperf is not set
-# CONFIG_PACKAGE_iperf3 is not set
+CONFIG_PACKAGE_iperf3=y
 # CONFIG_PACKAGE_ipip is not set
 CONFIG_PACKAGE_ipset=y
 # CONFIG_PACKAGE_ipset-dns is not set
