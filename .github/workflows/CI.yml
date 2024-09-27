@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Repository dispatch
-        if: ${{ github.repository == 'HiGarfield/lede-17.01.4-Mod' && github.event_name == 'push' }}
+        if: ${{ github.repository == 'chen-jianfu/lede-17.01.4-Mod' && github.event_name == 'push' }}
         uses: HiGarfield/repository-dispatch@main
         with:
           token: ${{ secrets.MY_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
       contents: write
     env:
       TARGET_DEVICE: ${{ matrix.target }}
-      SOURCE_REPO: 'HiGarfield/lede-17.01.4-Mod'
+      SOURCE_REPO: 'chen-jianfu/lede-17.01.4-Mod'
     strategy:
       max-parallel: 20
       matrix:
