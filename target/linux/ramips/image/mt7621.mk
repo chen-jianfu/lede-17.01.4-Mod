@@ -302,3 +302,14 @@ define Image/Prepare
 	$(MAKE) -C $(KDIR)/relocate KERNEL_ADDR=$(KERNEL_LOADADDR) CROSS_COMPILE=$(TARGET_CROSS)
 	$(CP) $(KDIR)/relocate/loader.bin $(KDIR)/loader.bin
 endef
+
+define Device/zte_e8820v2
+  $(Device/dsa-migration)
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := ZTE
+  DEVICE_MODEL := E8820V2
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb2 \
+          kmod-usb-ledtrig-usbport
+endef
+TARGET_DEVICES += zte_e8820v2
