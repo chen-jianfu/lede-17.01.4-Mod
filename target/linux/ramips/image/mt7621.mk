@@ -304,12 +304,9 @@ define Image/Prepare
 endef
 
 define Device/zte_e8820v2
-  $(Device/dsa-migration)
-  $(Device/uimage-lzma-loader)
-  IMAGE_SIZE := 16064k
-  DEVICE_VENDOR := ZTE
-  DEVICE_MODEL := E8820V2
-  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb2 \
-          kmod-usb-ledtrig-usbport
+  DTS := ZTE_E8820V2
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := ZTE E8820V2
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb2 kmod-usb-ledtrig-usbport
 endef
 TARGET_DEVICES += zte_e8820v2
