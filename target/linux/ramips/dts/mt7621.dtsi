@@ -1,6 +1,6 @@
 #include <dt-bindings/interrupt-controller/mips-gic.h>
 
-/ {
+{
 	#address-cells = <1>;
 	#size-cells = <1>;
 	compatible = "mediatek,mt7621-soc";
