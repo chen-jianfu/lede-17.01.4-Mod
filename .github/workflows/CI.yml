@@ -40,7 +40,7 @@ jobs:
     strategy:
       max-parallel: 20
       matrix:
-        target: [ "wr1200js" ]
+        target: [ "zte_e8820v2" ]
 
     steps:
       - name: Checkout
